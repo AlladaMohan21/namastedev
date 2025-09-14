@@ -1,0 +1,16 @@
+"use strict";
+
+require("./xyz.js");
+
+console.log("MOhan");
+var name = "mohan";
+console.log(name);
+console.log(globalThis === global);
+
+var _require = require("./sum.js"),
+    x = _require.x,
+    calculateSum = _require.calculateSum;
+
+calculateSum(3, 4);
+console.log(x);
+//# sourceMappingURL=app.dev.js.map
